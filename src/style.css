@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+@import "tailwindcss";
+body {
+  font-family: 'Lexend', sans-serif;
+}
+.slide {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.slide.current {
+  opacity: 1;
+  
+}
+.slide .content {
+  opacity: 0;
+  transform: translateX(-100%);   
+  transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out;
+}
+
+.slide.current .content {
+  opacity: 1;
+  transform: translateX(0);
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>slider</title>
+  </head>
+
+  <body class="h-screen">
+    <main class="h-full">
+      <section class="all relative h-screen overflow-hidden">
+        <div class="slides relative h-full">
+          <div
+            class="slide current absolute inset-0 h-full w-full bg-[url('/image/1.jpeg')] bg-cover bg-center bg-no-repeat transition-opacity duration-500 ease-in-out opacity-100"
+          >
+            <div
+              class="content absolute bottom-20 left-0 w-[600px] h-44 p-8 gap-4 flex flex-col bg-[#e5ebf3cc]"
+            >
+              <h2 class="text-3xl font-bold">Slide One</h2>
+              <p class="text-[#495b73]">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+                autem aliquam itaque libero delectus temporibus?
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="slide absolute inset-0 h-full w-full bg-[url('/image/2.jpeg')] bg-cover bg-center bg-no-repeat transition-opacity duration-500 ease-in-out opacity-0"
+          >
+            <div
+              class="content absolute bottom-20 left-0 w-[600px] h-44 p-8 gap-4 flex flex-col bg-[#e5ebf3cc]"
+            >
+              <h2 class="text-3xl font-bold">Slide Two</h2>
+              <p class="text-[#495b73]">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+                autem aliquam itaque libero delectus temporibus?
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="slide absolute inset-0 h-full w-full bg-[url('/image/3.jpeg')] bg-cover bg-center bg-no-repeat transition-opacity duration-500 ease-in-out opacity-0"
+          >
+            <div
+              class="content absolute bottom-20 left-0 w-[600px] h-44 p-8 gap-4 flex flex-col bg-[#e5ebf3cc]"
+            >
+              <h2 class="text-3xl font-bold">Slide Three</h2>
+              <p class="text-[#495b73]">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+                autem aliquam itaque libero delectus temporibus?
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="slide absolute inset-0 h-full w-full bg-[url('/image/4.jpeg')] bg-cover bg-center bg-no-repeat transition-opacity duration-500 ease-in-out opacity-0"
+          >
+            <div
+              class="content absolute bottom-20 left-0 w-[600px] h-44 p-8 gap-4 flex flex-col bg-[#e5ebf3cc]"
+            >
+              <h2 class="text-3xl font-bold">Slide Four</h2>
+              <p class="text-[#495b73]">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+                autem aliquam itaque libero delectus temporibus?
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="slide absolute inset-0 h-full w-full bg-[url('/image/5.jpeg')] bg-cover bg-center bg-no-repeat transition-opacity duration-500 ease-in-out opacity-0"
+          >
+            <div
+              class="content absolute bottom-20 left-0 w-[600px] h-44 p-8 gap-4 flex flex-col bg-[#e5ebf3cc]"
+            >
+              <h2 class="text-3xl font-bold">Slide Five</h2>
+              <p class="text-[#495b73]">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+                autem aliquam itaque libero delectus temporibus?
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="slide absolute inset-0 h-full w-full bg-[url('/image/6.jpeg')] bg-cover bg-center bg-no-repeat transition-opacity duration-500 ease-in-out opacity-0"
+          >
+            <div
+              class="content absolute bottom-20 left-0 w-[600px] h-44 p-8 gap-4 flex flex-col bg-[#e5ebf3cc]"
+            >
+              <h2 class="text-3xl font-bold">Slide Six</h2>
+              <p class="text-[#495b73]">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+                autem aliquam itaque libero delectus temporibus?
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <button id="prev"
+          class="absolute z-10 left-3 top-1/2 -translate-y-1/2 hover:bg-[#F2F0EF] rounded-full shadow cursor-pointer">
+          <img src="/image/back-button.svg" alt="Previous" class="w-10 h-10" />
+        </button>
+
+        <button id="next"
+          class="absolute z-10 right-3 top-1/2 -translate-y-1/2 rounded-full hover:bg-[#F2F0EF] shadow cursor-pointer">
+          <img src="/image/forward-button.svg" alt="Next" class="w-10 h-10" />
+        </button>
+
+      </section>
+    </main>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
